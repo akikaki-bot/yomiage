@@ -14,6 +14,10 @@ ffmpeg-static 4.4.0
 libsodium-wrappers 0.7.9
 ```
 ## うごかす
+※この読み上げさんはReplitDatabaseを使用しています。
+
+※Replit環境でないと動かない場合があります。
+
 ※それぞれVoicetextのAPIキーを取得しておいて環境変数keyで保存しておく
 
 ※同じくbotTokenも環境変数tokenで保存しておく
