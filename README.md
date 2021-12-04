@@ -13,7 +13,9 @@ ffmpeg 0.0.4
 ffmpeg-static 4.4.0
 libsodium-wrappers 0.7.9
 ```
-## うごかす
+## Windows環境 de うごかす
+作成中です。
+## Replit de うごかす
 ※この読み上げさんはReplitDatabaseを使用しています。
 
 ※Replit環境でないと動かない場合があります。
@@ -22,28 +24,19 @@ libsodium-wrappers 0.7.9
 
 ※同じくbotTokenも環境変数tokenで保存しておく
 
-cloneする
-```
-git clone https://github.com/akikaki-bot/yomiage
-```
+**このリポジトリをフォークしておく。**
 
-npm installする
-```
-npm install
-```
+**Replitを開いてgithubの欄からこれをクリックする。**
 
-実行する
-```
-npx node index.js
-```
+そうすると勝手にcloneが始まります
 
-Replitで動かすなら.replitファイルを作成して
-
+.replitファイルを作成して
 ```
-- .replit
 run = "npx node index.js
 ```
-でRun
+と中に書いておく
+
+そしてRun
 
 適当にメッセージを送信してvoice.wavが生成され再生されたらおｋ
 
