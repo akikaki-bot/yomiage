@@ -49,7 +49,7 @@ client.on('ready', async () => {
 })
 client.on('messageCreate', async message => {
   if (message.author.bot || message.channel.type === "dm") return;
-  const voiceText = new VoiceText('8iqbyo9zgcfbovht');
+  const voiceText = new VoiceText(voice_api_key);
   main(db,message,voiceText,createAudioPlayer,createAudioResource,AudioPlayerStatus,writeFileSync,getVoiceConnection,StreamType,joinVoiceChannel)
   if (message.content === ":on") {
     db.get(`${message.guild.id}_joined`).then(async v => {
