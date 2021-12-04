@@ -15,6 +15,9 @@ libsodium-wrappers 0.7.9
 ```
 ## うごかす
 ※それぞれVoicetextのAPIキーを取得しておいて環境変数keyで保存しておく
+
+※同じくbotTokenも環境変数tokenで保存しておく
+
 cloneする
 ```
 git clone https://github.com/akikaki-bot/yomiage
