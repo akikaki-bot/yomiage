@@ -60,7 +60,7 @@ client.on('messageCreate', async message => {
 
   //=================VoiceTextApi=======================
 
-  const voiceText = new VoiceText('8iqbyo9zgcfbovht');
+  const voiceText = new VoiceText(process.env.key);
 
   //=================Main handler=======================
 
