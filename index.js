@@ -40,6 +40,9 @@ client.on('ready', async () => {
   console.log('Google Teacher v1.0')
   const { generateDependencyReport } = require('@discordjs/voice');
 
+//==============slashcommand================
+ const serverid = "Your server id"
+//==========================================
   console.log(generateDependencyReport());
       const data = [
         {
@@ -51,7 +54,7 @@ client.on('ready', async () => {
           description: "TTSをオフにします。"
         }
     ];
-    await client.application.commands.set(data, '536491197305454602');
+    await client.application.commands.set(data, serverid);
 })
 client.on('messageCreate', async message => {
   //=================MessageEvent=======================
