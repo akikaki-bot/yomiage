@@ -44,7 +44,9 @@ run = "npx node index.js
 ## 注意
 ・このAPIで作成した音声はYoutube等で使用、公開することは利用規約により禁止されていますのでご遠慮ください。
 
-[VoiceText公式](https://cloud.voicetext.jp/webapi)
+All thx for [VoiceTextAPI](https://cloud.voicetext.jp/webapi)
+
+
 
 
 
