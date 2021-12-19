@@ -51,7 +51,7 @@ line 2
 
 .replitファイルを作成して
 ```
-run = "npx node index.js
+run = "npx node index.js"
 ```
 と中に書いておく
 
