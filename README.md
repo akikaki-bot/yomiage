@@ -8,36 +8,32 @@ voice-text 0.1.2
 @discordjs/
            opus  0.7.0
            voice 0.7.5
-@replit/database 2.0.1
+[ 非推奨 ]@replit/database 2.0.1
 ffmpeg 0.0.4
 ffmpeg-static 4.4.0
 libsodium-wrappers 0.7.9
+keyv 4.0.3
 ```
 ## Windows環境 de うごかす
-まだ方法は思いついてないですが書き換えるところだけ書いておきます。
+このプロジェクトをフォークしたら
+```
+npm install
+```
+```
+npm i npm @keyv/sqlite
+```
+して～
 
 ```
-> index.js
-line 23~24
-line 70 (db削除のみ)
-line 77 83 102 108
-
-> lib/main.js
-line 1 (db削除のみ)
-line 2
-
-> commands/allfile
- >>on.js
- >>ion.js
- >>off.js
- >>ioff.js
-すべてdb削除＆改良
+node index.js
 ```
-
+でおｋ！
 ## Replit de うごかす
-※この読み上げさんはReplitDatabaseを使用しています。
+~~※この読み上げさんはReplitDatabaseを使用しています。~~
 
-※Replit環境でないと動かない場合があります。
+~~※Replit環境でないと動かない場合があります。~~
+
+アプデでReplitDataBaseは使用しなくても大丈夫になりました。
 
 ※それぞれVoicetextのAPIキーを取得しておいて環境変数keyで保存しておく
 
