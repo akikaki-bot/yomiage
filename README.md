@@ -19,9 +19,6 @@ keyv 4.0.3
 ```
 npm install
 ```
-```
-npm i npm @keyv/sqlite
-```
 して～
 
 ```
