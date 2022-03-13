@@ -67,6 +67,10 @@ index.jsの`Client.on('Ready', () => {..})`のところに
 
 All thx for [VoiceTextAPI](https://cloud.voicetext.jp/webapi)
 
+## トラブルシューティング
+
+
+
 
 
 
