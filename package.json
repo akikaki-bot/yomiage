@@ -1,15 +1,17 @@
 {
-  "name": "google-teacher",
+  "name": "Google-teacher",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "dependencies": {
     "@discordjs/opus": "^0.7.0",
     "@discordjs/voice": "^0.7.5",
-    "@replit/database": "^2.0.1",
     "discord.js": "^13.3.1",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.4.0",
+    "keyv": "^4.1.1",
     "libsodium-wrappers": "^0.7.9",
+    "node": "^17.1.0",
     "tweetnacl": "^1.0.3",
     "voice-text": "^0.1.2"
   },
@@ -19,6 +21,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "ISC"
 }
+
