@@ -1,13 +1,17 @@
 const http = require('http');
+
 http.createServer(function (req, res) {
   res.end();
 }).listen(8080);
+
+//==================依存関係を呼んでパーティーをする===============
 const {
   Discord,
   MessageEmbed,
   Client,
   Intents
 } = require('discord.js')
+// まじでvoice分離するなはげ！
 const {
   joinVoiceChannel,
   createAudioPlayer,
@@ -17,21 +21,27 @@ const {
   getVoiceConnection,
   AudioPlayerStatus
 } = require("@discordjs/voice");
+
+const Keyv = require('keyv')
+
+const {
+  VoiceText
+} = require('voice-text')
+
+const {
+  writeFileSync
+} = require('fs');
+
 const option = {
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_MEMBERS]
 }
-const Keyv = require('keyv')
+
 //カスタムデータベース
 const db = new Keyv('sqlite://database.sqlite', {
   table: 'database'
 })
 const client = new Client(option)
-const {
-  VoiceText
-} = require('voice-text')
-const {
-  writeFileSync
-} = require('fs');
+
 //=============== main =====================
 const { main } = require('./lib/main.js')
 const { on } = require('./commands/on.js');
